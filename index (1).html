@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poshan</title>
+  <link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+  <div class="splash" id="splash">
+    <img src="E:\poshan_website\WhatsApp Image 2025-04-23 at 8.29.38 AM.jpeg" alt="Poshan Logo" width="100" />
+    <h1>Poshan</h1>
+  </div>
+  <div class="login-page" id="loginPage">
+    <h2>Welcome to Poshan</h2>
+    <input type="text" placeholder="Username" id="username" />
+    <input type="password" placeholder="Password" id="password" />
+    <button onclick="login()">Login</button>
+  </div>
+  <div class="dashboard" id="dashboard">
+    <h2 style="margin-bottom: 20px;">Poshan Dashboard</h2>
+    <div class="language-options">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('hi')">हिंदी</button>
+      <button onclick="setLanguage('ne')">অসমীয়া</button>
+    </div>
+    <div class="grid">
+      <div class="box" onclick="openNutrition()">Food and Nutrition</div>
+      <div class="box" onclick="alert('Opening Prescription...')">Prescription</div>
+      <div class="box" onclick="alert('Opening Gyno...')">Gyno</div>
+      <div class="box" onclick="openDoctorConsultation()">Doctor Consultation</div>
+      <div class="box" onclick="openGrowthMonitor()">Child Growth Monitor</div>
+      <div class="box" onclick="openGPSTracker()">Nearby Hospitals</div>
+    </div>
+    <div id="map" style="width: 100%; height: 300px; display: none; margin-top: 20px;"></div>
+  </div>
+  <script src="script (1).js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

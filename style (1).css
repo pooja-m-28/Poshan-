@@ -1,0 +1,86 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #e6f2ff;
+}
+.splash {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  animation: fadeOut 2s ease 3s forwards;
+}
+.splash h1 {
+  font-size: 3em;
+  color: #ff69b4;
+  margin-top: 20px;
+}
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+.login-page {
+  display: none;
+  height: 100vh;
+  background: transparent;
+  padding: 40px;
+  text-align: center;
+}
+.login-page input {
+  padding: 10px;
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+  border-radius: 10px;
+  border: none;
+}
+.login-page button {
+  padding: 10px 30px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.dashboard {
+  display: none;
+  padding: 20px;
+  background-color: transparent;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+.box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.box:hover {
+  transform: scale(1.05);
+  background-color: #ffeff7;
+}
+.language-options button {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
